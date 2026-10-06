@@ -1,0 +1,119 @@
+body {
+    background-color:#040127;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 30px;
+}
+
+h1 {
+    color: #040127;
+    border: 35%;
+    border-radius: 10px;
+    size: 6px;
+    background-color: rgb(131, 66, 252); 
+    width: 25% ; 
+    border-left: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h2 {
+    text-align: center;
+    color:#640EF1;
+}
+
+h3 {
+    color:#640EF1;
+    font-family: Verdana, Geneva, Tahoma;
+}
+
+p {
+    color: white;
+    text-align: justify;
+    text-indent: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+    size: 5px;
+    color:white;
+}
+
+li {
+    display: inline;
+    margin-top: 30px;
+    margin-inline: 150px;
+}
+
+.redes a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    display: inline;
+    text-align: center;
+    margin-left: 25px;
+}
+
+#acess {
+    position: relative;
+    top: -40px;
+    left: 87.5%;
+}
+
+#acess2 {
+    position: relative;
+    top: -30px;
+    left: 90.5%;
+}
+
+a:hover {
+    color: #640EF1;
+}
+
+.centro {
+    text-align: center;
+}
+
+#logo {
+    width: 150px;
+    border-radius: 10%;
+}
+
+#forms {
+    width: 300px;
+    height: 325px;
+    background-color: rgb(131, 66, 252);
+    padding: 25px;
+    box-sizing: border-box;
+    margin: auto;
+    border-radius: 10%;
+    color: black;
+    font-weight: bold;
+}
+
+#jogo1, #jogo2, #jogo3 {
+    width: auto;
+    height: 170px;
+    padding: 25px;
+    box-sizing: border-box;
+    display: flex;
+    gap: 50px;
+    text-align: right;
+    text-align: center;
+    font-size: 18px;
+}
+
+#subs {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+#nature, #moonbreaker {
+    border-radius: 10px;
+}

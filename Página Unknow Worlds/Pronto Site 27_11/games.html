@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Principal</title>
+        <link rel="stylesheet" href="estilo.css">
+        <script>
+
+            function MudarCor() {
+                document.getElementById("body").style.backgroundColor = "#F9F9F9";
+                document.getElementById("page1").style.color = "black";
+                document.getElementById("page2").style.color = "black";
+                document.getElementById("page3").style.color = "black";
+                document.getElementById("text1").style.color = "black";
+                document.getElementById("text2").style.color = "black";
+                document.getElementById("text3").style.color = "black";
+                document.getElementById("rede1").style.color = "black";
+                document.getElementById("rede2").style.color = "black";
+                document.getElementById("rede3").style.color = "black";
+            }
+
+            function MudarCor2() {
+                document.getElementById("body").style.backgroundColor = "#040127";
+                document.getElementById("page1").style.color = "white";
+                document.getElementById("page2").style.color = "white";
+                document.getElementById("page3").style.color = "white";
+                document.getElementById("text1").style.color = "white";
+                document.getElementById("text2").style.color = "white";
+                document.getElementById("text3").style.color = "white";
+                document.getElementById("rede1").style.color = "white";
+                document.getElementById("rede2").style.color = "white";
+                document.getElementById("rede3").style.color = "white";
+            }
+            function Pequeno() {
+                document.getElementById("page1").style.fontSize = "12px";
+                document.getElementById("page2").style.fontSize = "12px";
+                document.getElementById("page3").style.fontSize = "12px";
+                document.getElementById("text1").style.fontSize = "12px";
+                document.getElementById("text2").style.fontSize = "12px";
+                document.getElementById("text3").style.fontSize = "12px";
+                document.getElementById("rede1").style.fontSize = "15px";
+                document.getElementById("rede2").style.fontSize = "15px";
+                document.getElementById("rede3").style.fontSize = "15px";
+                document.getElementById("logo").style.width = "100px";
+                document.getElementById("jg").style.fontSize = "20px";
+                document.getElementById("tit1").style.fontSize = "17px";
+                document.getElementById("tit2").style.fontSize = "17px";
+                document.getElementById("tit3").style.fontSize = "17px";
+                document.getElementById("subs").style.width = "150px";
+                document.getElementById("subs").style.height = "150px";
+                document.getElementById("nature").style.width = "150px";
+                document.getElementById("nature").style.height = "75px";
+                document.getElementById("moonbreaker").style.width = "150px";
+                document.getElementById("moonbreaker").style.height = "75px";
+            }
+
+            function Normal() {
+                document.getElementById("page1").style.fontSize = "15px";
+                document.getElementById("page2").style.fontSize = "15px";
+                document.getElementById("page3").style.fontSize = "15px";
+                document.getElementById("text1").style.fontSize = "15px";
+                document.getElementById("text2").style.fontSize = "15px";
+                document.getElementById("text3").style.fontSize = "15px";
+                document.getElementById("rede1").style.fontSize = "17px";
+                document.getElementById("rede2").style.fontSize = "17px";
+                document.getElementById("rede3").style.fontSize = "17px";
+                document.getElementById("logo").style.width = "150px";
+                document.getElementById("jg").style.fontSize = "25px";
+                document.getElementById("tit1").style.fontSize = "20px";
+                document.getElementById("tit2").style.fontSize = "20px";
+                document.getElementById("tit3").style.fontSize = "20px";
+                document.getElementById("subs").style.width = "200px";
+                document.getElementById("subs").style.height = "200px";
+                document.getElementById("nature").style.width = "200px";
+                document.getElementById("nature").style.height = "100px";
+                document.getElementById("moonbreaker").style.width = "200px";
+                document.getElementById("moonbreaker").style.height = "100px";
+            }
+
+            function Grande() {
+                document.getElementById("page1").style.fontSize = "20px";
+                document.getElementById("page2").style.fontSize = "20px";
+                document.getElementById("page3").style.fontSize = "20px";
+                document.getElementById("text1").style.fontSize = "20px";
+                document.getElementById("text2").style.fontSize = "20px";
+                document.getElementById("text3").style.fontSize = "20px";
+                document.getElementById("rede1").style.fontSize = "25px";
+                document.getElementById("rede2").style.fontSize = "25px";
+                document.getElementById("rede3").style.fontSize = "25px";
+                document.getElementById("logo").style.width = "200px";
+                document.getElementById("jg").style.fontSize = "35px";
+                document.getElementById("tit1").style.fontSize = "30px";
+                document.getElementById("tit2").style.fontSize = "30px";
+                document.getElementById("tit3").style.fontSize = "30px";
+                document.getElementById("subs").style.width = "250px";
+                document.getElementById("subs").style.height = "250px";
+                document.getElementById("nature").style.width = "250px";
+                document.getElementById("nature").style.height = "125px";
+                document.getElementById("moonbreaker").style.width = "250px";
+                document.getElementById("moonbreaker").style.height = "125px";
+            }
+
+        </script>
+    </head>
+    <body id="body">  
+          
+        <ul>
+            <li>
+                <a id="page1" href=games.html>Jogos</a>
+            </li>
+            <li>
+                <a id="page2" href=index.html>Página Inicial</a>
+            </li>
+            <li>
+                <a id="page3" href=Contato.html>Contato</a>
+            </li>
+        </ul>
+
+        <div id="acess">   
+            <button onclick="MudarCor()">Light Mode</button>
+            <button onclick="MudarCor2()">Dark Mode</button>
+        </div>
+        <div id="acess2">
+            <button onclick="Pequeno()">-</button>
+            <button onclick="Normal()">=</button>
+            <button onclick="Grande()">+</button>
+        </div>  
+
+        <div class="centro">
+            <img id="logo" src="img/unknown_worlds_entertainment_logo.jpg"/>
+
+            <h1 id="jg">Jogos</h1>
+        </div>
+            
+            <h3 id="tit1" style="font-size: 20px; margin-bottom: 3px;">Franquia Subnautica:</h3>
+        <div id="jogo1">  
+            <p id="text1">     A franquia Subnautica é um convite a mergulhar em um oceano alienígena, onde cada raio de luz que atravessa a água revela tanto beleza quanto perigo. No primeiro jogo, o jogador se vê perdido no vasto planeta 4546B, enfrentando criaturas colossais e mistérios que habitam suas profundezas. Já em Below Zero, a jornada continua em regiões congeladas, onde o frio e o silêncio escondem segredos ainda mais sombrios. Mais do que um simples jogo de sobrevivência, Subnautica é uma experiência de fascínio e temor diante do desconhecido, onde cada mergulho pode ser uma descoberta — ou um encontro fatal.</p>
+            <img id="subs" src="img/sub-subbz.png" alt="Subnautica e Subnautica:Below Zero">
+        </div>    
+
+        <br>
+        <br>
+               
+        <h3 id="tit2" style="font-size: 20px; margin-bottom: 3px;">Natural Selection:</h3>
+        <div id="jogo2">
+            <img id="nature" src="img/nature-selection.jpg" alt="Natural Selection">
+            <p id="text2">     A franquia Natural Selection mistura a intensidade dos jogos de tiro em primeira pessoa com a estratégia de um RTS, criando batalhas únicas entre humanos e alienígenas. Em um universo onde a sobrevivência depende tanto da mira quanto da inteligência tática, cada partida é uma guerra viva: soldados constroem defesas e expandem território, enquanto criaturas evoluem e se adaptam para dominar o campo de batalha. Não é apenas combate, é uma dança entre coordenação, estratégia e instinto, onde o menor erro pode custar a vitória. Natural Selection é mais que um jogo — é a sensação de estar no coração de uma guerra que pulsa com cada decisão.</p>
+        </div>    
+
+        <br>
+        <br>
+            
+        <h3 id="tit3" style="font-size: 20px; margin-bottom: 3px;">Moonbreaker:</h3>
+        <div id="jogo3">  
+            <p id="text3">    Moonbreaker é um jogo que transforma o campo de batalha em um tabuleiro vivo, onde cada miniatura não é apenas uma peça, mas uma obra de arte moldada à mão pelo jogador. Inspirado nos jogos de estratégia de mesa, ele combina combates táticos por turnos com a liberdade criativa de pintar e personalizar suas unidades como em uma coleção real. Ambientado em um universo de ficção científica vibrante, cada confronto é uma mistura de cálculo frio e imaginação colorida, onde o detalhe de um pincel pode ser tão marcante quanto a vitória em combate. Moonbreaker não é só estratégia: é arte, é jogo e é narrativa em miniatura.</p>
+            <img id="moonbreaker" src="img/Moonbreaker.jpg" alt="Moonbreaker">
+        </div>      
+
+        <br>
+        <br>
+
+        <div class="centro">
+            <div class="redes">
+                <a id="rede1" href="https://x.com/unknownworlds" target="blank">Twitter</a>
+                <a id="rede2" href="https://www.youtube.com/UnknownWorlds" target="blank">YouTube</a>
+                <a id="rede3" href="https://www.instagram.com/uwedev/" target="blank">Instagram</a>
+            </div>
+        </div>
+
+    </body>
+</html>

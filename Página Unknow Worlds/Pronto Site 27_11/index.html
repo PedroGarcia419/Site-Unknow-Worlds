@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Principal</title>
+        <link rel="stylesheet" href="estilo.css">
+        <script>
+
+            function MudarCor() {
+                document.getElementById("body").style.backgroundColor = "#F9F9F9";
+                document.getElementById("page1").style.color = "black";
+                document.getElementById("page2").style.color = "black";
+                document.getElementById("page3").style.color = "black";
+                document.getElementById("text1").style.color = "black";
+                document.getElementById("text2").style.color = "black";
+                document.getElementById("text3").style.color = "black";
+                document.getElementById("rede1").style.color = "black";
+                document.getElementById("rede2").style.color = "black";
+                document.getElementById("rede3").style.color = "black";
+            }
+
+            function MudarCor2() {
+                document.getElementById("body").style.backgroundColor = "#040127";
+                document.getElementById("page1").style.color = "white";
+                document.getElementById("page2").style.color = "white";
+                document.getElementById("page3").style.color = "white";
+                document.getElementById("text1").style.color = "white";
+                document.getElementById("text2").style.color = "white";
+                document.getElementById("text3").style.color = "white";
+                document.getElementById("rede1").style.color = "white";
+                document.getElementById("rede2").style.color = "white";
+                document.getElementById("rede3").style.color = "white";
+            }
+            function Pequeno() {
+                document.getElementById("page1").style.fontSize = "12px";
+                document.getElementById("page2").style.fontSize = "12px";
+                document.getElementById("page3").style.fontSize = "12px";
+                document.getElementById("text1").style.fontSize = "12px";
+                document.getElementById("text2").style.fontSize = "12px";
+                document.getElementById("text3").style.fontSize = "12px";
+                document.getElementById("rede1").style.fontSize = "15px";
+                document.getElementById("rede2").style.fontSize = "15px";
+                document.getElementById("rede3").style.fontSize = "15px";
+                document.getElementById("logo").style.width = "100px";
+                document.getElementById("pi").style.fontSize = "20px";
+                document.getElementById("tit1").style.fontSize = "17px";
+                document.getElementById("tit2").style.fontSize = "17px";
+                document.getElementById("tit3").style.fontSize = "17px";
+            }
+
+            function Normal() {
+                document.getElementById("page1").style.fontSize = "15px";
+                document.getElementById("page2").style.fontSize = "15px";
+                document.getElementById("page3").style.fontSize = "15px";
+                document.getElementById("text1").style.fontSize = "15px";
+                document.getElementById("text2").style.fontSize = "15px";
+                document.getElementById("text3").style.fontSize = "15px";
+                document.getElementById("rede1").style.fontSize = "17px";
+                document.getElementById("rede2").style.fontSize = "17px";
+                document.getElementById("rede3").style.fontSize = "17px";
+                document.getElementById("logo").style.width = "150px";
+                document.getElementById("pi").style.fontSize = "25px";
+                document.getElementById("tit1").style.fontSize = "20px";
+                document.getElementById("tit2").style.fontSize = "20px";
+                document.getElementById("tit3").style.fontSize = "20px";
+            }
+
+            function Grande() {
+                document.getElementById("page1").style.fontSize = "20px";
+                document.getElementById("page2").style.fontSize = "20px";
+                document.getElementById("page3").style.fontSize = "20px";
+                document.getElementById("text1").style.fontSize = "20px";
+                document.getElementById("text2").style.fontSize = "20px";
+                document.getElementById("text3").style.fontSize = "20px";
+                document.getElementById("rede1").style.fontSize = "25px";
+                document.getElementById("rede2").style.fontSize = "25px";
+                document.getElementById("rede3").style.fontSize = "25px";
+                document.getElementById("logo").style.width = "200px";
+                document.getElementById("pi").style.fontSize = "35px";
+                document.getElementById("tit1").style.fontSize = "30px";
+                document.getElementById("tit2").style.fontSize = "30px";
+                document.getElementById("tit3").style.fontSize = "30px";
+            }
+
+        </script>
+    </head>
+    <body id="body">
+        
+        <ul>
+            <li>
+                <a id="page1" href=games.html>Jogos</a>
+            </li>
+            <li>
+                <a id="page2" href=index.html>Pagina Inicial</a>
+            </li>
+            <li>
+                <a id="page3" href=contato.html>Contato</a>
+            </li>
+        </ul> 
+
+        <div id="acess">   
+            <button onclick="MudarCor()">Light Mode</button>
+            <button onclick="MudarCor2()">Dark Mode</button>
+        </div>
+        <div id="acess2">
+            <button onclick="Pequeno()">-</button>
+            <button onclick="Normal()">=</button>
+            <button onclick="Grande()">+</button>
+        </div>     
+
+        <div class="centro">
+            <img id="logo" src="img/unknown_worlds_entertainment_logo.jpg"/>
+        
+            <h1 id="pi">Página inicial</h1>
+        </div>
+
+        <h3 id="tit1">Sobre a Empresa:</h3>
+        <p id="text1">     A Unknown Worlds Entertainment é um estúdio independente conhecido por transformar ideias ousadas em experiências inesquecíveis. Com sede em San Francisco, o time ganhou reconhecimento ao mesclar gêneros de forma criativa, unindo ação, estratégia e imersão narrativa. A empresa se destaca por criar universos que desafiam e encantam os jogadores. Sua missão é clara: expandir os limites do que um jogo pode ser, sempre oferecendo mundos que inspiram exploração, imaginação e descobertas.</p>
+        
+        <br>
+
+        <h3 id="tit2">Quem Somos Nós:</h3>
+        <p id="text2">     Nós somos a Unknown Worlds, um estúdio dedicado a criar experiências únicas que mergulham os jogadores em mundos cheios de vida e mistério. De Natural Selection a Subnautica e Moonbreaker, buscamos unir inovação, narrativa e liberdade de jogo. Nosso objetivo é simples e ambicioso: inspirar curiosidade, despertar emoções e transformar cada partida em uma verdadeira jornada.</p>
+
+        <br>
+
+        <h3 id="tit3">Oque Nós Fazemos:</h3>
+        <p id="text3">       A Unknown Worlds é apaixonada pelo objetivo da nossa empresa: "Unir o mundo através do jogo". Buscamos criar experiências inclusivas por meio da representação diversificada de personagens, culturas, ambientes e muito mais. A equipe é composta por pessoas de todo o planeta, o que é fundamental para o nosso trabalho. Queremos criar jogos para o mundo.</p>
+
+        <br>
+        <br>
+
+        <div class="centro">
+            <div class="redes"> 
+                <a id="rede1" href="https://x.com/unknownworlds" target="blank">Twitter</a>
+                <a id="rede2" href="https://www.youtube.com/UnknownWorlds" target="blank">YouTube</a>
+                <a id="rede3" href="https://www.instagram.com/uwedev/" target="blank">Instagram</a>
+            </div>
+        </div>
+
+    </body>
+</html>

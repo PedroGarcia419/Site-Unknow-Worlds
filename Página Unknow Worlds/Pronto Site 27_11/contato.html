@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>contato</title>
+        <link rel="stylesheet" href="estilo.css">
+        <script>
+
+            function MudarCor() {
+                document.getElementById("body").style.backgroundColor = "#F9F9F9";
+                document.getElementById("page1").style.color = "black";
+                document.getElementById("page2").style.color = "black";
+                document.getElementById("page3").style.color = "black";
+                document.getElementById("rede1").style.color = "black";
+                document.getElementById("rede2").style.color = "black";
+                document.getElementById("rede3").style.color = "black";
+            }
+
+            function MudarCor2() {
+                const elemento = document.getElementById("body")
+                elemento.style.backgroundColor = "#040127";
+                document.getElementById("page1").style.color = "white";
+                document.getElementById("page2").style.color = "white";
+                document.getElementById("page3").style.color = "white";
+                document.getElementById("rede1").style.color = "white";
+                document.getElementById("rede2").style.color = "white";
+                document.getElementById("rede3").style.color = "white";
+            }
+            function Pequeno() {
+                document.getElementById("page1").style.fontSize = "12px";
+                document.getElementById("page2").style.fontSize = "12px";
+                document.getElementById("page3").style.fontSize = "12px";
+                document.getElementById("rede1").style.fontSize = "15px";
+                document.getElementById("rede2").style.fontSize = "15px";
+                document.getElementById("rede3").style.fontSize = "15px";
+                document.getElementById("logo").style.width = "100px";
+                document.getElementById("com").style.fontSize = "20px";
+                document.getElementById("cont").style.fontSize = "15px";
+                document.getElementById("forms").style.width = "275px";
+                document.getElementById("forms").style.height = "300px";
+                document.getElementById("forms").style.fontSize = "12px";
+            }
+
+            function Normal() {
+                document.getElementById("page1").style.fontSize = "15px";
+                document.getElementById("page2").style.fontSize = "15px";
+                document.getElementById("page3").style.fontSize = "15px";
+                document.getElementById("rede1").style.fontSize = "17px";
+                document.getElementById("rede2").style.fontSize = "17px";
+                document.getElementById("rede3").style.fontSize = "17px";
+                document.getElementById("logo").style.width = "150px";
+                document.getElementById("com").style.fontSize = "25px";
+                document.getElementById("cont").style.fontSize = "20px";
+                document.getElementById("forms").style.width = "300px";
+                document.getElementById("forms").style.height = "325px";
+                document.getElementById("forms").style.fontSize = "15px";
+            }
+
+            function Grande() {
+                document.getElementById("page1").style.fontSize = "20px";
+                document.getElementById("page2").style.fontSize = "20px";
+                document.getElementById("page3").style.fontSize = "20px";
+                document.getElementById("rede1").style.fontSize = "25px";
+                document.getElementById("rede2").style.fontSize = "25px";
+                document.getElementById("rede3").style.fontSize = "25px";
+                document.getElementById("logo").style.width = "200px";
+                document.getElementById("com").style.fontSize = "35px";
+                document.getElementById("cont").style.fontSize = "30px";
+                document.getElementById("forms").style.width = "325px";
+                document.getElementById("forms").style.height = "350px";
+                document.getElementById("forms").style.fontSize = "17px";
+            }
+
+        </script>
+    </head>
+    <body id="body">
+
+        <ul>
+            <li>
+                <a id="page1" href=games.html>Jogos</a>
+            </li>
+            <li>
+                <a id="page2" href=index.html>Página Inicial</a>
+            </li>
+            <li>
+                <a id="page3" href=contato.html>Contato</a>
+            </li>
+        </ul>
+
+        <div id="acess">   
+            <button onclick="MudarCor()">Light Mode</button>
+            <button onclick="MudarCor2()">Dark Mode</button>
+        </div>
+        <div id="acess2">
+            <button onclick="Pequeno()">-</button>
+            <button onclick="Normal()">=</button>
+            <button onclick="Grande()">+</button>
+        </div>  
+
+        <div class="centro">
+            <img id="logo" src="img/unknown_worlds_entertainment_logo.jpg"/>
+            <br>
+            <br>
+            <h1 style="margin: 0 auto;" id="com">Comunidade</h1>
+            <h2 id="cont">Contato</h2>
+        </div>
+
+        <br>
+
+        <div class="centro">
+            <form id="forms">
+            Nome:<input required type="text" name="Nome">
+            <br>
+            e-mail:<input required type="text" name="e-mail" placeholder="exemplo@gmail.com">
+            <br>
+            Idade:<input required min="0" max="100" type="number" name="Idade">
+            <br>
+            <br>
+            Tipos:<select name="Tipo da Mensagem">
+                <option value="Reclamação">Reclamação</option>
+                <option value="Sugestão">Sugestão</option>
+                <option value="Ajuda">Ajuda</option>
+            </select>
+            <br>
+            <br>
+            <legend>Mensagem</legend>
+            <textarea name="Mensagem" rows="5" cols="20">Mensagem</textarea>
+            <br>
+            <br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>  
+
+        <br>
+        <br>
+            
+        <div class="centro">
+            <div class="redes">
+                <a id="rede1" href="https://x.com/unknownworlds" target="blank">Twitter</a>
+                <a id="rede2" href="https://www.youtube.com/UnknownWorlds" target="blank">YouTube</a>
+                <a id="rede3" href="https://www.instagram.com/uwedev/" target="blank">Instagram</a>
+            </div>
+        </div>
+
+    </body>
+</html>
